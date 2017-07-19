@@ -68,7 +68,7 @@ html, body {
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
+    position: absolute; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
@@ -77,15 +77,12 @@ html, body {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    -webkit-animation-name: fadeIn; /* Fade in the background */
-    -webkit-animation-duration: 0.4s;
     animation-name: fadeIn;
-    animation-duration: 0.4s
+    animation-duration: 1s;
 }
 
 /* Modal Content/Box */
 .modal-content {
-    /*background-color: #fefefe;*/
     color: #000000;
     margin: 15% auto; /* 15% from the top and centered */
     width: 650px; /* Could be more or less, depending on screen size */
@@ -106,12 +103,12 @@ html, body {
     background-color: #ffffff;
 }
 
-input[type="text"]
-{
-    background-color: transparent;
+.field:focus {
+    outline-color: transparent;
 }
 
 .field {
+    background-color: #ffffff;
     width: 650px;
     height: 40px;
     padding-left: 10pt;
@@ -144,23 +141,36 @@ input[type="text"]
 }
 
 .modal-footer {
-    background-color: transparent;
+    background-color: #ffffff;
     color: #000000;
 }
 
-.button {
+.submit-button:hover {
+    background-image: url(../images/feather-clicked.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #f5f5f5;
+}
+
+.submit-button:active {
+    background-image: url(../images/feather-clicked.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #f5f5f5;
+}
+
+.submit-button {
+    background-image: url(../images/feather.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     background-color: #4A148C;
-    color: #ffffff;
-    font-family: "Open Sans";
-    min-width: 6em;
-    display: inline-block;
+    width: 6em;
+    height: 6em;
     line-height: inherit;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    letter-spacing: 0.02em;
-    border-radius: 2em;
-    padding: 0.166667em 1.5em 0.2em;
+    border-radius: 100%;
+    margin-left: 550px;
+    margin-bottom: 15px;
+    cursor: pointer;
 }
 
 /* The Close Button */
@@ -177,7 +187,13 @@ input[type="text"]
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: #ffffff;
     text-decoration: none;
     cursor: pointer;
+}
+
+/*Animation*/
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
 }

@@ -21,7 +21,7 @@
                     <textarea id="tale-field" class="field field-tale" name="tale-field" type="text" rows="100" placeholder="Scribble your story here..." required="required"></textarea>
                 </div>
                 <div class="modal-footer">
-                    <input class="button" type="submit" value="Send">
+                    <input class="submit-button" type="submit" value="">
                 </div>
             </form>
         </div>
