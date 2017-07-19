@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('test');
+});
+Route::get('blade', function () {
+    return view('page',array('name' => 'Ethereal Tales'));
 });
