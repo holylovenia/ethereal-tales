@@ -14,9 +14,16 @@
                 <span class="close">&times;</span>
                 <h2>Letter to Heaven</h2>
             </div>
-            <div class="modal-body">
-                <p>Some text in the Modal..</p>
-            </div>
+            <form>
+                <div class="modal-body">
+                    <input id="author-field" class="field field-author" name="author-field" type="text" placeholder="Author's name" required="required">
+                    <input id="subject-field" class="field field-subject" name="subject-field" type="text" placeholder="Title" required="required">
+                    <textarea id="tale-field" class="field field-tale" name="tale-field" type="text" rows="100" placeholder="Scribble your story here..." required="required"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <input class="button" type="submit" value="Send">
+                </div>
+            </form>
         </div>
     </div>
 @endsection

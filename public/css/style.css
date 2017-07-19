@@ -85,7 +85,7 @@ html, body {
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
+    /*background-color: #fefefe;*/
     color: #000000;
     margin: 15% auto; /* 15% from the top and centered */
     width: 650px; /* Could be more or less, depending on screen size */
@@ -97,13 +97,70 @@ html, body {
     height: 60px;
     font-family: "Great Vibes";
     font-size: 22px;
+    padding-top: 5pt;
     padding-left: 10pt;
-    line-height: 70px;
+    line-height: 1pt;
 }
 
 .modal-body {
     background-color: #ffffff;
+}
+
+input[type="text"]
+{
+    background-color: transparent;
+}
+
+.field {
+    width: 650px;
+    height: 40px;
+    padding-left: 10pt;
+    padding-right: 20pt;
+}
+
+.field-author {
+    color: #4A148C;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.field-subject {
+    color: #5e5e5e;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+}
+
+.field-tale {
+    color: #5e5e5e;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: normal;
+    height: 150px;
+    border: none;
+    padding-top: 10px;
+}
+
+.modal-footer {
+    background-color: transparent;
     color: #000000;
+}
+
+.button {
+    background-color: #4A148C;
+    color: #ffffff;
+    font-family: "Open Sans";
+    min-width: 6em;
+    display: inline-block;
+    line-height: inherit;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.02em;
+    border-radius: 2em;
+    padding: 0.166667em 1.5em 0.2em;
 }
 
 /* The Close Button */
@@ -113,6 +170,7 @@ html, body {
     font-family: Arial;
     font-size: 50px;
     font-weight: bold;
+    padding-top: 20pt;
     padding-right: 10pt;
     padding-bottom: 10pt;
 }
