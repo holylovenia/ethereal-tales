@@ -1,4 +1,4 @@
-<html>
+<html lang="{{ config('app.locale') }}">
 
 <head>
       <title>@yield('title')</title>
@@ -18,18 +18,18 @@
         <div class = "home-welcome">
             entrance to
         </div>
-@show
+        <div class = "home-title">
+            <h1>{{$name}}</h1>
+        </div>
+    @show
 </div>
-@section('sidebar')
-    This is the master sidebar.
-@show
 
 <div class = "container">
     @yield('content')
 </div>
-
 {{--AngularJS--}}
+<script src="{{ asset('js/lib/angular.min.js') }}"></script>
 <script src="{{ asset('js/popup.js') }}"></script>
-
+<script src="{{ asset('js/ethereal-tales.js') }}"></script>
 </body>
 </html>
