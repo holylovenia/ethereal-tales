@@ -3,6 +3,7 @@ Ethereal Tales is a single page application where everyone can submit stories of
 
 Build using AngularJS for front-end and Laravel for back-end.
 
+
 ## To Do List
 
 [x] Install frameworks
