@@ -13,22 +13,16 @@
 </head>
 
 <body>
-<div class = "home">
-    @section('home')
+@section('home')
+    <div class = "home">
         <div class = "home-welcome">
             entrance to
         </div>
         <div class = "home-title">
             <h1>Ethereal Tales</h1>
         </div>
-    @show
-</div>
-
-<div class = "container">
-    @section('content')
-    @show
-</div>
-
+    </div>
+@show
 
 {{--AngularJS--}}
 <script src="{{ asset('js/lib/angular.min.js') }}"></script>

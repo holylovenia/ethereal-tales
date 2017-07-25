@@ -66,7 +66,7 @@ html, body {
     display: inline-block;
     font-size: 24px;
     letter-spacing: 5px;
-    margin: -120px 475px;
+    margin: -240px 475px;
     padding-top: 15pt;
     padding-bottom: 10pt;
     cursor: pointer;
@@ -199,17 +199,52 @@ html, body {
     cursor: pointer;
 }
 
+pre {
+    display: block;
+    font-family: "Open Sans";
+    white-space: pre;
+    margin: 1em 0px;
+}
+
 table, th , td  {
     color: #000000;
-    border: 1px solid grey;
+    text-align: center;
+    border: 1px solid #4A148C;
     border-collapse: collapse;
-    padding: 5px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 1150px;
+    font-family: "Open Sans";
+    font-size: 15px;
 }
+
 table tr:nth-child(odd) {
-    background-color: #f1f1f1;
+    background-color: #E1BEE7;
 }
+
 table tr:nth-child(even) {
-    background-color: #ffffff;
+    background-color: #F3E5F5;
+}
+
+td:nth-child(1) {
+    font-weight: bold;
+}
+
+.author-column {
+    width: 20%;
+}
+
+.subject-column {
+    width: 30%;
+}
+
+.th-head {
+    background-color: #4A148C;
+    color: #ffffff;
+    font-family: "Great Vibes";
+    font-size: 30px;
+    height: 50px;
 }
 
 /*Animation*/
