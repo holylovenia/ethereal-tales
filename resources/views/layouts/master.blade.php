@@ -19,7 +19,7 @@
             entrance to
         </div>
         <div class = "home-title">
-            <h1>{{$name}}</h1>
+            <h1>Ethereal Tales</h1>
         </div>
     @show
 </div>

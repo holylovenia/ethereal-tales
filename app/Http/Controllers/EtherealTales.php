@@ -13,11 +13,10 @@ class EtherealTales extends Controller
      * @return Response
      */
     public function index($id = null) {
-        if($id == null) {
-            $data = EtherealTale::all();
-            return view('page')->with('data', $data);
+        if (isset($id)) {
+            return EtherealTale::find($id);
         } else {
-            return $this->show($id);
+            return EtherealTale::all();
         }
     }
 

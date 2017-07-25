@@ -4,52 +4,33 @@
 
 var app = angular.module("etherealtales", []).constant('API_URL', 'http://localhost/etherealtales/public/api/v1/');
 
-// //Config for escape [[ to work with laravel
-// app.config(function ($interpolateProvider) {
-//     $interpolateProvider.startSymbol('[[');
-//     $interpolateProvider.endSymbol(']]');
-// });
-
-// app.controller('etherealTalesController', ['$scope', function($scope) {
-//     $scope.result = {};
-//
-//     $scope.update = function(etherealTale) {
-//         $scope.result = angular.copy(etherealTale);
-//     };
-//
-//     $scope.reset = function() {
-//         $scope.etherealTale = angular.copy($scope.result);
-//     };
-//
-//     $scope.reset();
-// }]);
+var refresh = function() {
+    $http.get('api/v1/etherealtales')
+        .then(function (response) {
+            $scope.etherealtales = response.data.records;
+        });
+}
 
 app.controller('etherealTalesController', function($scope, $http) {
 
-    $scope.newEtherealTale = function() {
-        $http.post('/api/submissions',
+    $scope.newEtherealTale = function () {
+        $http.post('api/v1/etherealtales',
             {
                 author: $scope.etherealTale.author,
                 subject: $scope.etherealTale.subject,
                 tale: $scope.etherealTale.tale
 
             })
-            .success(function(response) {
+            .success(function (response) {
                 $scope.etherealTale = response;
+                refresh();
             })
-            .error(function(response) {
+            .error(function (response) {
                 console.log(response);
+                refresh();
             });
     };
 });
-
-    // function($scope, $http, API_URL) {
-    // //retrieve employees listing from API
-    // $http.get(API_URL + "etherealtales")
-    //     .success(function(response) {
-    //         $scope.etherealtales = response;
-    //     });
-    //
     // //show modal form
     // $scope.toggle = function(modalstate, id) {
     //     $scope.modalstate = modalstate;
