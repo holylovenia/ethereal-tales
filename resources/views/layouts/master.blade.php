@@ -25,8 +25,11 @@
 </div>
 
 <div class = "container">
-    @yield('content')
+    @section('content')
+    @show
 </div>
+
+
 {{--AngularJS--}}
 <script src="{{ asset('js/lib/angular.min.js') }}"></script>
 <script src="{{ asset('js/popup.js') }}"></script>

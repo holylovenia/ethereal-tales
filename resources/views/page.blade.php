@@ -26,6 +26,9 @@
 @endsection
 
 @section('content')
+    <div ng-app="etherealtales" ng-controller="etherealTalesController">
+        <span ng-bind="etList"></span>
+    </div>
     <table class="table" ng-app="etherealtales" ng-controller="etherealTalesController">
         <thead>
         <tr>
@@ -35,10 +38,10 @@
         </tr>
         </thead>
         <tbody>
-        <tr ng-repeat="etherealtale in etherealtales">
-            <td ng-bind="etherealtale.author"></td>
-            <td ng-bind="etherealtale.subject"></td>
-            <td ng-bind="etherealtale.tale"></td>
+        <tr ng-repeat="et in etList">
+            <td ng-bind="et.author"></td>
+            <td ng-bind="et.subject"></td>
+            <td ng-bind="et.tale"></td>
         </tr>
         </tbody>
     </table>

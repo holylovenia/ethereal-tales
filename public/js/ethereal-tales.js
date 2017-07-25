@@ -2,16 +2,23 @@
  * Created by Holy on 21-Jul-17.
  */
 
-var app = angular.module("etherealtales", []).constant('API_URL', 'http://localhost/etherealtales/public/api/v1/');
+var app = angular.module("etherealtales", []);
 
 var refresh = function() {
     $http.get('api/v1/etherealtales')
         .then(function (response) {
-            $scope.etherealtales = response.data.records;
+            $scope.etList = response.data;
         });
-}
+};
 
 app.controller('etherealTalesController', function($scope, $http) {
+
+    $scope.etList = [];
+
+    $http.get('api/v1/etherealtales')
+        .then(function (response) {
+            $scope.etList = response.data;
+        });
 
     $scope.newEtherealTale = function () {
         $http.post('api/v1/etherealtales',
@@ -30,6 +37,15 @@ app.controller('etherealTalesController', function($scope, $http) {
                 refresh();
             });
     };
+
+    // $scope.fetchList = function () {
+    //     $http.get('api/v1/etherealtales')
+    //         .then(function (response) {
+    //             $scope.etList = response.data;
+    //         });
+    // };
+    //
+    // $scope.fetchList();
 });
     // //show modal form
     // $scope.toggle = function(modalstate, id) {
