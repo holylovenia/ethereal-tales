@@ -22,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EtherealTales.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="350">
-              <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+              <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -480,7 +480,7 @@
       <workItem from="1500905280524" duration="2592000" />
       <workItem from="1500958526631" duration="29059000" />
       <workItem from="1501038568338" duration="8952000" />
-      <workItem from="1501086684082" duration="104000" />
+      <workItem from="1501086684082" duration="637000" />
     </task>
     <servers />
   </component>
@@ -517,7 +517,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124297000" />
+    <option name="totallyTimeSpent" value="124830000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -849,7 +849,7 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EtherealTales.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
-          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
           <folding />
         </state>
       </provider>
