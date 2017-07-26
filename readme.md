@@ -1,4 +1,7 @@
 # Ethereal Tales
+
+![Ethereal Tales][jpg01]
+
 Ethereal Tales is a single page application where everyone can submit stories of their own.
 
 Build using AngularJS for front-end and Laravel for back-end.
@@ -16,3 +19,6 @@ Build using AngularJS for front-end and Laravel for back-end.
 - [x] Fill database
 - [x] Create table
 - [x] Create unit tests
+
+
+[jpg01]: screenshots/1.jpg
