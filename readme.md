@@ -15,4 +15,4 @@ Build using AngularJS for front-end and Laravel for back-end.
 - [x] Create pop up window
 - [x] Fill database
 - [x] Create table
-- [ ] Create unit tests
+- [x] Create unit tests
