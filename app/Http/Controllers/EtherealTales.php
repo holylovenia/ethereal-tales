@@ -36,46 +36,4 @@ class EtherealTales extends Controller
 
         return 'Ethereal Tale successfully created with id ' . $etherealTale->id;
     }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return Response
-     */
-    public function show($id) {
-        return EtherealTale::find($id);
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  Request  $request
-     * @param  int  $id
-     * @return Response
-     */
-    public function update(Request $request, $id) {
-        $etherealTale = EtherealTale::find($id);
-
-        $etherealTale->author = $request->input('author');
-        $etherealTale->subject = $request->input('subject');
-        $etherealTale->tale = $request->input('tale');
-        $etherealTale->save();
-
-        return "Success updating Ethereal Tale #" . $etherealTale->id;
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return Response
-     */
-    public function destroy(Request $request) {
-        $etherealTale = EtherealTale::find($request->input('id'));
-
-        $etherealTale->delete();
-
-        return "Employee record successfully deleted #" . $request->input('id');
-    }
 }

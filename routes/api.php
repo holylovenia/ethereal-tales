@@ -18,5 +18,3 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:api');
 Route::get('/v1/etherealtales/{id?}', 'EtherealTales@index');
 Route::post('/v1/etherealtales', 'EtherealTales@store');
-Route::post('/v1/etherealtales/{id}', 'EtherealTales@update');
-Route::delete('/v1/etherealtales/{id}', 'EtherealTales@destroy');
