@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,112" rel="stylesheet" type="text/css">
 
     {{--Style--}}
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
 </head>
 
@@ -25,8 +25,8 @@
 @show
 
 {{--AngularJS--}}
-<script src="{{ asset('js/lib/angular.min.js') }}"></script>
-<script src="{{ asset('js/popup.js') }}"></script>
-<script src="{{ asset('js/ethereal-tales.js') }}"></script>
+<script src="js/lib/angular.min.js"></script>
+<script src="js/popup.js"></script>
+<script src="js/ethereal-tales.js"></script>
 </body>
 </html>
