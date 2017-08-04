@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa02014d-beb3-41de-9c23-34d49c904ea5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2017_07_21_050911_create_tales_table.php" afterPath="$PROJECT_DIR$/database/migrations/2017_07_21_050911_create_tales_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.php" afterPath="$PROJECT_DIR$/config/database.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,17 +48,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="74" column="34" lean-forward="true" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
+            <state relative-caret-position="450">
+              <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2017_07_21_050911_create_tales_table.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2017_07_21_050911_create_tales_table.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2017_07_21_050911_create_tales_table.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="389">
@@ -187,8 +187,8 @@
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/master.blade.php" />
-        <option value="$PROJECT_DIR$/config/database.php" />
         <option value="$PROJECT_DIR$/database/migrations/2017_07_21_050911_create_tales_table.php" />
+        <option value="$PROJECT_DIR$/config/database.php" />
       </list>
     </option>
   </component>
@@ -618,7 +618,7 @@
       <workItem from="1501663566688" duration="1722000" />
       <workItem from="1501749833313" duration="2093000" />
       <workItem from="1501851758858" duration="844000" />
-      <workItem from="1501856397228" duration="788000" />
+      <workItem from="1501856397228" duration="1412000" />
     </task>
     <servers />
   </component>
@@ -655,7 +655,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136646000" />
+    <option name="totallyTimeSpent" value="137270000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -980,18 +980,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="74" column="34" lean-forward="true" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2017_07_21_050911_create_tales_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
           <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding />
         </state>
       </provider>
